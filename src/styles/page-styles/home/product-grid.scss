@@ -1,0 +1,11 @@
+.product-grid-container {
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.product-card {
+  width: 250px;
+  height: 350px;
+  flex-shrink: 0;
+  border: 1px solid black;
+}
