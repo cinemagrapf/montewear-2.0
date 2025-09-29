@@ -1,11 +1,11 @@
 import '../../styles/page-styles/home/product-grid.scss';
 import { Col } from 'react-bootstrap';
-import Product from '../product';
+import ProductCard from '../product-card';
 
 const products = [
   {
     id: '001',
-    img: 'https://via.placeholder.com/250x350',
+    img: 'https://placehold.co/250x250',
     productName: 'Product 1',
     price: '$100.00',
     oldPrice: '$150.00',
@@ -15,7 +15,7 @@ const products = [
   },
   {
     id: '002',
-    img: 'https://via.placeholder.com/250x350',
+    img: 'https://placehold.co/250x250',
     productName: 'Product 2',
     price: '$120.00',
     oldPrice: '$180.00',
@@ -25,7 +25,7 @@ const products = [
   },
   {
     id: '003',
-    img: 'https://via.placeholder.com/250x350',
+    img: 'https://placehold.co/250x250',
     productName: 'Product 3',
     price: '$90.00',
     oldPrice: '$130.00',
@@ -35,7 +35,7 @@ const products = [
   },
   {
     id: '004',
-    img: 'https://via.placeholder.com/250x350',
+    img: 'https://placehold.co/250x250',
     productName: 'Product 4',
     price: '$110.00',
     oldPrice: '$160.00',
@@ -45,23 +45,13 @@ const products = [
   },
   {
     id: '005',
-    img: 'https://via.placeholder.com/250x350',
+    img: 'https://placehold.co/250x250',
     productName: 'Product 5',
     price: '$130.00',
     oldPrice: '$200.00',
     discount: 'Save 35%',
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    sizes: ['L', 'XL', 'XXL'],
     colors: ['Purple', 'Orange'],
-  },
-  {
-    id: '006',
-    img: 'https://via.placeholder.com/250x350',
-    productName: 'Product 6',
-    price: '$140.00',
-    oldPrice: '$210.00',
-    discount: 'Save 33%',
-    sizes: ['M', 'L', 'XL', 'XXL'],
-    colors: ['Cyan', 'Magenta'],
   },
 ];
 
@@ -71,12 +61,15 @@ const ProductGrid = () => {
       <div className="row g-3">
         {products.map((product) => (
           <Col key={product.id} className="d-flex justify-content-center">
-            <Product
+            <ProductCard
               _id={product._id}
               img={product.img}
+              discount={product.discount}
               productName={product.productName}
               price={product.price}
-              color={product.color}
+              oldPrice={product.oldPrice}
+              // color={product.colors}
+              sizes={product.sizes}
             />
           </Col>
         ))}
