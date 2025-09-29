@@ -1,11 +1,12 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
+import ContactForm from '../components/contacts/contact-form';
 
 function Contacts() {
   return (
     <div className="App">
       <Header />
-      <h1 className="page-title mt-90">Contact Us</h1>
+      <ContactForm />
       <Footer />
     </div>
   );

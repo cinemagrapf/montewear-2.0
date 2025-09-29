@@ -9,7 +9,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 //Navbar logo
-import navbarLogo from '../assets/navbar-logo.png';
+import navbarLogo from '../assets/images/navbar-logo.png';
 
 const Header = () => {
   const [isAuthModalOpen, setAuthModalOpen] = useState(false);

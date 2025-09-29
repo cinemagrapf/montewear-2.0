@@ -1,7 +1,7 @@
 import '../styles/footer.scss';
 import { Link } from 'react-router-dom';
-import montewearLogo from '../assets/logotypes/montewear-logo.png';
-import arasakaLogo from '../assets/logotypes/arasaka-logo.png';
+import montewearLogo from '../assets/images/logotypes/montewear-logo.png';
+import arasakaLogo from '../assets/images/logotypes/arasaka-logo.png';
 import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faSquareTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faSquareInstagram } from '@fortawesome/free-brands-svg-icons';

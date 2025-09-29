@@ -75,7 +75,7 @@
     font-size: 14px;
   }
   .product-button:hover {
-    background-color: darken($highlight-color, 10%);
+    background-color: darken($highlight-color, 5%);
     cursor: pointer;
     transform: scale(1.1);
     transition: transform 0.3s ease;

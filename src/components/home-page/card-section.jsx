@@ -2,17 +2,17 @@ import '../../styles/page-styles/home/cards-section.scss';
 import React, { useState } from 'react';
 
 // Importing images
-import cardSectionBg from '../../assets/cards/cards-bg.png';
+import cardSectionBg from '../../assets/images/cards/cards-bg.png';
 
-import streetwearCardBg from '../../assets/cards/streetwear-logo.png'; // Cards background images
-import techwearCardBg from '../../assets/cards/techwear-logo.png';
-import corporateCardBg from '../../assets/cards/corporate-logo.png';
-import steampunkCardBg from '../../assets/cards/steampunk-logo.png';
+import streetwearCardBg from '../../assets/images/cards/streetwear-logo.png'; // Cards background images
+import techwearCardBg from '../../assets/images/cards/techwear-logo.png';
+import corporateCardBg from '../../assets/images/cards/corporate-logo.png';
+import steampunkCardBg from '../../assets/images/cards/steampunk-logo.png';
 
-import streetwearStyle from '../../assets/cards/streetwear-nobg.png'; // Cards style images
-import techwearStyle from '../../assets/cards/techwear-nobg.png';
-import corporateStyle from '../../assets/cards/corporate-nobg.png';
-import steampunkStyle from '../../assets/cards/steampunk-nobg.png';
+import streetwearStyle from '../../assets/images/cards/streetwear-nobg.png'; // Cards style images
+import techwearStyle from '../../assets/images/cards/techwear-nobg.png';
+import corporateStyle from '../../assets/images/cards/corporate-nobg.png';
+import steampunkStyle from '../../assets/images/cards/steampunk-nobg.png';
 
 const CardSection = () => {
   const [title, setTitle] = useState('Pick Your Side');
