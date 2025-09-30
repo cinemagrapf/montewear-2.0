@@ -1,8 +1,18 @@
 import '../../styles/page-styles/contacts/contact-form.scss';
 import SideImage from '../../assets/images/streetwear-anime-poster.png';
+import { useState } from 'react';
+import PhoneNumberInput from './phone-number-input';
+
 const ContactForm = () => {
+  const [fullPhone, setFullPhone] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Submitted full phone:', fullPhone);
+    // send `fullPhone` to backend here
+  };
   return (
-    <div className="form-container mx-auto ">
+    <div className="form-container mx-auto">
       <div className="row justify-content-center">
         <div className="col-lg-10">
           <div className="contact-wrapper">
@@ -15,14 +25,19 @@ const ContactForm = () => {
                     inquire about custom orders? We're here to help make your shopping experience
                     seamless.
                   </p>
+
+                  {/* Full Name */}
                   <div className="mb-3">
                     <input
                       type="text"
                       className="form-control"
                       placeholder="Full Name*(required)"
                       id="fullName"
-                      required></input>
+                      required
+                    />
                   </div>
+
+                  {/* Email Address */}
                   <div className="mb-3">
                     <input
                       type="email"
@@ -31,33 +46,38 @@ const ContactForm = () => {
                       id="email"
                       name="email"
                       autoComplete="email"
-                      required></input>
+                      required
+                    />
                   </div>
+
+                  {/* Phone Number */}
                   <div className="mb-3">
-                    <input
-                      type="tel"
-                      className="form-control"
-                      placeholder="Phone Number (optional)"
-                      id="phone"
-                      name="phone"
-                      autoComplete="tel"></input>
+                    <PhoneNumberInput onChange={(value) => setFullPhone(value)} />
                   </div>
+
+                  {/* Order Number */}
                   <div className="mb-3">
                     <input
                       type="text"
                       className="form-control"
                       placeholder="Order Number (if applicable)"
                       id="orderNumber"
-                      name="orderNumber"></input>
+                      name="orderNumber"
+                    />
                   </div>
+
+                  {/* Message */}
                   <div className="mb-3">
                     <textarea
                       className="form-control"
                       placeholder="Message"
                       id="message"
                       name="message"
-                      rows="4"></textarea>
+                      rows="4"
+                    />
                   </div>
+
+                  {/* Submit Button */}
                   <div className="d-grid">
                     <button type="submit" className="btn btn-custom">
                       Get in touch
@@ -65,6 +85,8 @@ const ContactForm = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Side Image */}
               <div className="col-md-6 my-3">
                 <img
                   src={SideImage}
@@ -79,4 +101,5 @@ const ContactForm = () => {
     </div>
   );
 };
+
 export default ContactForm;
