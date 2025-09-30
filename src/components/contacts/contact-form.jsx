@@ -14,10 +14,10 @@ const ContactForm = () => {
   return (
     <div className="form-container mx-auto">
       <div className="row justify-content-center">
-        <div className="col-lg-10">
+        <div className="col-lg-12 px-4">
           <div className="contact-wrapper">
             <div className="row g-0">
-              <div className="col-md-5 mx-auto my-auto">
+              <div className="col-md-4 mx-auto my-auto">
                 <div className="contact-form h-100">
                   <h3 className="contact-heading">Chat with our team</h3>
                   <p className="contact-description">
