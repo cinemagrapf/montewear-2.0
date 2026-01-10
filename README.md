@@ -1,27 +1,11 @@
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/cinemagrapf/montewear-frontend-ReactJS
-cd montewear-frontend-ReactJS
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-```
-
----
-
 ## Usage
 
 1. Start the development server:
 
 ```bash
+mkdir frontend
 cd frontend
-git clone https://github.com/username/repository.git .
+git clone https://github.com/username/cinemagrapf/montewear-frontend-ReactJS .
 npm install
 
 npm run dev
